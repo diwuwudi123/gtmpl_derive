@@ -11,8 +11,8 @@
 //!
 //!let v: Value = (Foo { bar: 23 }).into();
 //! ```
-
-use proc_macro::TokenStream;
+extern crate proc_macro;
+use crate::proc_macro::TokenStream;
 use quote::quote;
 
 #[proc_macro_derive(Gtmpl)]
